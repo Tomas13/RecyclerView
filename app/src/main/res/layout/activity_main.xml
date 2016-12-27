@@ -11,6 +11,14 @@
     tools:context="ru.startandroid.realm.MainActivity">
 
 
+    <!--<GridView-->
+        <!--android:numColumns="3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/grid_view"/>-->
+
+
+
     <TableLayout
         android:id="@+id/table"
         android:layout_width="match_parent"
@@ -26,25 +34,30 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_name"
                 android:text="NAME"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
                 android:layout_weight="1"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_surname"
-                android:text="SURNAME"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:text="SURNAMEsdfsd"
                 android:layout_weight="1"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="send"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:text="Button"
                 android:layout_weight="1"
 
                 android:id="@+id/btn_send"/>
         </TableRow>
 
     </TableLayout>
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_main"

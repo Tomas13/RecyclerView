@@ -6,6 +6,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+/*
+
+        GridView gridView = (GridView) findViewById(R.id.grid_view);
+
+        final String[] numbers = new String[] {
+
+
+              "Name","Surname", "Button"
+
+        };
+        // Create adapter to set value for grid view
+        ArrayAdapter<String> adapterGrid = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, numbers);
+
+        gridView.setAdapter(adapterGrid);
+*/
 
         List<Users> usersList = new ArrayList<>();
         Users users = new Users("Novak", "Djokovic");
